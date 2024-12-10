@@ -1,0 +1,47 @@
+<Configuration status="info">
+    <Appenders>
+        <!-- 콘솔 출력 설정 -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- kwanho10.log 파일에 대한 File Appender 설정 -->
+        <RollingFile name="kwanho10File" 
+                     fileName="/tmp/cswp/logs/kwanho10/kwanho10.log" 
+                     filePattern="/tmp/cswp/logs/kwanho10/kwanho10.log.%d{yyyy-MM-dd}.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+
+        <!-- kwanho10_info.log 파일에 대한 File Appender 설정 -->
+        <RollingFile name="kwanho10InfoFile" 
+                     fileName="/tmp/cswp/logs/kwanho10/kwanho10_info.log" 
+                     filePattern="/tmp/cswp/logs/kwanho10/kwanho10_info.log.%d{yyyy-MM-dd}.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- kr.ac.kku.cs.wp.kwanho10 패키지에 대한 로그 설정, debug , info ,TRACE   , error 레벨로 설정 -->
+        <Logger name="kr.ac.kku.cs.wp.kwanho10" level="info" additivity="false">
+            <AppenderRef ref="kwanho10File"/>
+            <AppenderRef ref="kwanho10InfoFile"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- 기본(Root) 로그 설정, info 레벨로 설정 -->
+        <Root level="info">
+            <AppenderRef ref="kwanho10File"/>
+            <AppenderRef ref="kwanho10InfoFile"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,366 @@
+@charset "UTF-8";
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+	color: #333;
+	margin: 0;
+	padding: 0px;
+}
+
+#container{
+	width: 1580px;
+	margin: 0 auto;
+}
+
+#auth-section{
+    display: flex;
+    justify-content: flex-end;	
+}
+
+#search-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+input[type="search"] {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	width: 300px;
+	font-size: 16px;
+	margin-right: 10px;
+	transition: border-color 0.2s;
+}
+input[type="search"]:focus {
+	border-color: #007BFF;
+	outline: none;
+}
+button {
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	background-color: #007BFF;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+#refresh {
+	max-width: 100%;
+	margin: auto;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-top: 10px;
+}
+
+#user-count {
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #666;
+}
+
+.user-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.user-card {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 15px;
+	flex: 1 1 calc(33% - 15px);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s;
+}
+
+.user-card:hover {
+	transform: translateY(-5px);
+}
+
+.user-card p {
+	margin: 5px 0;
+}
+
+.user-card p:last-child {
+	margin-bottom: 0;
+}
+
+/* 모달 배경 스타일 */
+#modal-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	z-index: 100;
+}
+
+/* 모달 팝업 스타일 */
+#modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	z-index: 101;
+	display: none;
+	width: 300px; /* 너비 조정 */
+}
+
+/* 모달 content 안의 스타일 */
+#modal-content {
+	margin-bottom: 20px;
+}
+
+#modal-content h2 {
+	margin-bottom: 10px;
+}
+
+#modal-content p {
+	margin-bottom: 20px;
+}
+
+#modal button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+#modal button:hover {
+	background-color: #0056b3;
+}
+
+/* 사용자 카드 스타일 */
+.user-card {
+	cursor: pointer; /* 카드 클릭 시 포인터 커서 */
+}
+
+nav {
+        background-color: #333; /* 내비게이션 배경색 */
+    color: white;
+    position: relative; /* 하위 메뉴를 제대로 위치시키기 위한 설정 */
+}
+
+nav ul {
+    list-style: none; /* 리스트 스타일 제거 */
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li {
+    display: inline-block; /* 가로로 배치 */
+    position: relative; /* 하위 메뉴를 절대 위치로 설정하기 위한 기준 */
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 15px 20px; /* 패딩 설정 */
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s; /* 배경색 전환 효과 */
+}
+
+nav > ul > li > a:hover {
+    background-color: #575757; /* 호버 시 배경색 변경 */
+}
+
+
+.submenu {
+    display: none; /* 기본적으로 서브 메뉴 숨김 */
+    position: absolute; /* 서브 메뉴를 절대 위치로 설정 */
+    top: 100%; /* 부모 아래에 위치 */
+    left: 0;
+    background-color: #333; /* 서브 메뉴 배경색 */
+    z-index: 1000; /* 다른 요소 위에 나타나도록 설정 */
+}
+
+.show {
+    display: block; /* show 클래스를 가진 경우 서브 메뉴 표시 */
+}
+
+
+
+/* 서브 메뉴 항목 스타일 */
+.submenu a {
+    display: block; /* 서브 메뉴 항목을 블록 요소로 설정 */
+    padding: 10px 15px; /* 패딩 설정 */
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s; /* 호버 시 배경색 전환 효과 */
+}
+
+.submenu a:hover {
+    background-color: #575757; /* 호버 시 서브 메뉴 항목 배경색 변경 */
+}
+
+
+
+/* 사용자 정보 부분 style */
+#auth-section {
+	display: flex;
+	align-items: center,
+}
+
+#auth-section button {
+	background-color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #007bff;
+	margin-left: 10px,
+}
+
+#auth-section button:hover {
+	background-color: #0056b3;
+	color: white;
+}
+
+
+ /* 에러 메시지 스타일 */
+    .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    /* 성공 메시지 스타일 */
+    .success {
+        color: green;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .filter-container {
+	    margin-bottom: 20px;
+	    display: flex;
+	    align-items: center; /* 필드와 버튼을 나란히 배치 */
+	}
+	
+	.filter-container input {
+	    width: 90%;
+	    padding: 10px;
+	    font-size: 16px;
+	    border: 1px solid #ccc;
+	    border-radius: 5px;
+	    margin-right: 10px; /* 버튼과 간격 추가 */
+	}
+	
+	.filter-container button {
+	    padding: 10px 20px;
+	    font-size: 16px;
+	    background-color: #007bff;
+	    color: white;
+	    border: none;
+	    border-radius: 5px;
+	    cursor: pointer;
+	}
+	
+	.filter-container button:hover {
+	    background-color: #0056b3;
+	}
+
+
+    .user-card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* 카드 크기를 좁게 설정 */
+        gap: 20px;
+    }
+
+    .user-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease;
+        width: 220px; /* 카드 폭을 좁게 */
+        height: 300px; /* 카드 높이를 길게 */
+    }
+
+    .user-card:hover {
+        transform: scale(1.05);
+    }
+
+    .user-card img {
+        width: 100%;
+        height: 150px; /* 이미지 높이 늘림 */
+        object-fit: cover;
+    }
+
+    .user-info {
+        padding: 2px;
+        font-size: 14px;
+        text-align: left;        
+    }
+
+	
+
+
+    .user-info h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #007bff;
+    }
+
+    .user-info p {
+        font-size: 12px;
+        color: #333;
+        line-height : 0;
+        margin-bottom : 15px;
+    }
+
+    .user-info button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .user-info button:hover {
+        background-color: #0056b3;
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 768px) {
+        .user-card-container {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* 작은 화면에서 더 좁게 */
+        }
+
+        .user-info h3 {
+            font-size: 14px;
+        }
+
+        .user-info p {
+            font-size: 11px;
+        }
+
+        .user-info button {
+            font-size: 10px;
+        }
+    }
+    
+    
+    

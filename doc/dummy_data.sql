@@ -1,0 +1,100 @@
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (1, '화장품', 'Product_1', 45611, 66, 'kku_1', 'Description of Product_1', 'https://picsum.photos/200/300?random=846');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (2, '전자제품', 'Product_2', 48424, 58, 'kku_1', 'Description of Product_2', 'https://picsum.photos/200/300?random=498');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (3, '전자제품', 'Product_3', 19074, 8, 'kku_1', 'Description of Product_3', 'https://picsum.photos/200/300?random=630');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (4, '화장품', 'Product_4', 3070, 19, 'kku_1', 'Description of Product_4', 'https://picsum.photos/200/300?random=802');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (5, '화장품', 'Product_5', 20790, 69, 'kku_1', 'Description of Product_5', 'https://picsum.photos/200/300?random=152');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (6, '의류', 'Product_6', 20983, 49, 'kku_1', 'Description of Product_6', 'https://picsum.photos/200/300?random=567');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (7, '의류', 'Product_7', 5482, 4, 'kku_1', 'Description of Product_7', 'https://picsum.photos/200/300?random=319');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (8, '화장품', 'Product_8', 46998, 32, 'kku_1', 'Description of Product_8', 'https://picsum.photos/200/300?random=610');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (9, '화장품', 'Product_9', 12497, 20, 'kku_1', 'Description of Product_9', 'https://picsum.photos/200/300?random=863');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (10, '화장품', 'Product_10', 32273, 42, 'kku_1', 'Description of Product_10', 'https://picsum.photos/200/300?random=408');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (11, '화장품', 'Product_11', 49419, 13, 'kku_1', 'Description of Product_11', 'https://picsum.photos/200/300?random=258');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (12, '전자제품', 'Product_12', 17854, 72, 'kku_1', 'Description of Product_12', 'https://picsum.photos/200/300?random=165');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (13, '전자제품', 'Product_13', 12864, 84, 'kku_1', 'Description of Product_13', 'https://picsum.photos/200/300?random=344');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (14, '전자제품', 'Product_14', 30402, 87, 'kku_1', 'Description of Product_14', 'https://picsum.photos/200/300?random=32');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (15, '화장품', 'Product_15', 8631, 99, 'kku_1', 'Description of Product_15', 'https://picsum.photos/200/300?random=202');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (16, '의류', 'Product_16', 3637, 93, 'kku_1', 'Description of Product_16', 'https://picsum.photos/200/300?random=740');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (17, '의류', 'Product_17', 3004, 11, 'kku_1', 'Description of Product_17', 'https://picsum.photos/200/300?random=899');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (18, '의류', 'Product_18', 10191, 91, 'kku_1', 'Description of Product_18', 'https://picsum.photos/200/300?random=780');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (19, '전자제품', 'Product_19', 30504, 1, 'kku_1', 'Description of Product_19', 'https://picsum.photos/200/300?random=160');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (20, '전자제품', 'Product_20', 14776, 39, 'kku_1', 'Description of Product_20', 'https://picsum.photos/200/300?random=897');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (21, '의류', 'Product_21', 1508, 54, 'kku_1', 'Description of Product_21', 'https://picsum.photos/200/300?random=562');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (22, '전자제품', 'Product_22', 5091, 6, 'kku_1', 'Description of Product_22', 'https://picsum.photos/200/300?random=129');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (23, '화장품', 'Product_23', 1627, 26, 'kku_1', 'Description of Product_23', 'https://picsum.photos/200/300?random=79');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (24, '전자제품', 'Product_24', 15537, 24, 'kku_1', 'Description of Product_24', 'https://picsum.photos/200/300?random=108');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (25, '전자제품', 'Product_25', 7862, 58, 'kku_1', 'Description of Product_25', 'https://picsum.photos/200/300?random=961');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (26, '화장품', 'Product_26', 27873, 47, 'kku_1', 'Description of Product_26', 'https://picsum.photos/200/300?random=624');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (27, '의류', 'Product_27', 16073, 4, 'kku_1', 'Description of Product_27', 'https://picsum.photos/200/300?random=79');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (28, '전자제품', 'Product_28', 13716, 68, 'kku_1', 'Description of Product_28', 'https://picsum.photos/200/300?random=772');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (29, '전자제품', 'Product_29', 25122, 98, 'kku_1', 'Description of Product_29', 'https://picsum.photos/200/300?random=927');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (30, '화장품', 'Product_30', 5902, 55, 'kku_1', 'Description of Product_30', 'https://picsum.photos/200/300?random=696');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (31, '화장품', 'Product_31', 8582, 26, 'kku_1', 'Description of Product_31', 'https://picsum.photos/200/300?random=703');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (32, '전자제품', 'Product_32', 16758, 40, 'kku_1', 'Description of Product_32', 'https://picsum.photos/200/300?random=864');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (33, '화장품', 'Product_33', 34649, 93, 'kku_1', 'Description of Product_33', 'https://picsum.photos/200/300?random=878');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (34, '화장품', 'Product_34', 1743, 64, 'kku_1', 'Description of Product_34', 'https://picsum.photos/200/300?random=506');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (35, '의류', 'Product_35', 18256, 79, 'kku_1', 'Description of Product_35', 'https://picsum.photos/200/300?random=364');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (36, '전자제품', 'Product_36', 20815, 9, 'kku_1', 'Description of Product_36', 'https://picsum.photos/200/300?random=220');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (37, '의류', 'Product_37', 25068, 42, 'kku_1', 'Description of Product_37', 'https://picsum.photos/200/300?random=102');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (38, '화장품', 'Product_38', 4398, 98, 'kku_1', 'Description of Product_38', 'https://picsum.photos/200/300?random=104');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (39, '전자제품', 'Product_39', 46218, 24, 'kku_1', 'Description of Product_39', 'https://picsum.photos/200/300?random=173');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (40, '의류', 'Product_40', 16760, 32, 'kku_1', 'Description of Product_40', 'https://picsum.photos/200/300?random=61');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (41, '의류', 'Product_41', 23103, 13, 'kku_1', 'Description of Product_41', 'https://picsum.photos/200/300?random=306');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (42, '전자제품', 'Product_42', 20411, 42, 'kku_1', 'Description of Product_42', 'https://picsum.photos/200/300?random=305');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (43, '의류', 'Product_43', 27095, 70, 'kku_1', 'Description of Product_43', 'https://picsum.photos/200/300?random=525');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (44, '전자제품', 'Product_44', 27740, 45, 'kku_1', 'Description of Product_44', 'https://picsum.photos/200/300?random=319');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (45, '화장품', 'Product_45', 39493, 18, 'kku_1', 'Description of Product_45', 'https://picsum.photos/200/300?random=667');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (46, '화장품', 'Product_46', 1788, 41, 'kku_1', 'Description of Product_46', 'https://picsum.photos/200/300?random=782');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (47, '의류', 'Product_47', 2934, 48, 'kku_1', 'Description of Product_47', 'https://picsum.photos/200/300?random=237');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (48, '의류', 'Product_48', 23015, 1, 'kku_1', 'Description of Product_48', 'https://picsum.photos/200/300?random=902');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (49, '의류', 'Product_49', 33420, 40, 'kku_1', 'Description of Product_49', 'https://picsum.photos/200/300?random=617');
+INSERT INTO products (id, category, name, price, quantity, user_id, itemDetail, imgUrl) 
+    VALUES (50, '전자제품', 'Product_50', 14424, 21, 'kku_1', 'Description of Product_50', 'https://picsum.photos/200/300?random=366');

@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/* 기본 스타일 */
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f9fa;
+}
+
+/* 컨테이너 스타일 */
+.container {
+	max-width: 600px;
+	margin: 50px auto;
+	background-color: white;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	position: relative;
+	z-index: 1;
+}
+
+/* 제목 스타일 */
+.container h2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/* 라벨과 입력 필드 스타일 */
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.form-group input, .form-group select {
+	width: 100%;
+	padding: 12px;
+	box-sizing: border-box;
+	font-size: 16px;
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+}
+
+/* 파일 입력 필드 스타일 */
+.form-group input[type="file"] {
+	padding: 10px;
+	background-color: white;
+	border: none;
+	cursor: pointer;
+}
+
+/* 에러 메시지 스타일 */
+.error {
+	color: red;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+/* 성공 메시지 스타일 */
+.success {
+	color: green;
+	font-size: 16px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* 버튼 스타일 */
+button[type="submit"] {
+	width: 100%;
+	padding: 14px;
+	background-color: #28a745;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #218838;
+}
+
+button[disabled] {
+	background-color: #6c757d;
+	cursor: not-allowed;
+}
+
+/* 역할 선택 체크박스 스타일 */
+.roles-group {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.roles-group label {
+	width: 48%;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+}
+
+.roles-group input[type="checkbox"] {
+	margin-left: 10px;
+	width: 18px;
+	height: 18px;
+}
+
+/* 사진 업로드 미리보기 스타일 */
+.image-preview {
+	margin-top: 10px;
+}
+
+.image-preview img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* 비밀번호 입력 필드 아이콘 스타일 */
+.password-field {
+	position: relative;
+}
+
+.password-field input[type="password"], .password-field input[type="text"]
+	{
+	width: 100%;
+	padding-right: 40px;
+}
+
+.password-field .toggle-password {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+/* 파일 선택 버튼 스타일 */
+.custom-file-input {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+}
+
+.custom-file-input input[type="file"] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 100px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+.custom-file-label {
+	display: block;
+	padding: 12px;
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+	background-color: white;
+	cursor: pointer;
+	text-align: center;
+}
+
+/* 로딩 오버레이 스타일 */
+.loading-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
+	z-index: 9999;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.spinner {
+	border: 8px solid #f3f3f3;
+	border-top: 8px solid #28a745;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
