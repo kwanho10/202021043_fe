@@ -57,5 +57,27 @@ kwanho10
 
 ## 7. 기타
 1. **로컬 테스트:** Docker Compose로 MySQL 개발 환경 구축  
-2. **버전 관리:** GitHub  
+2. **버전 관리:** GitHub
+
+
+
+## 8. ERD
+<img src="https://github.com/kwanho10/202021043_fe/blob/main/doc/erd.png?raw=true" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
